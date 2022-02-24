@@ -1,0 +1,33 @@
+{
+	"@type": "MessageCard",
+	"@context": "http://schema.org/extensions",
+	"themeColor": "0076D7",
+	"summary": "new alert from velocloud orchestrator",
+	"sections": [
+		{
+			"activityTitle": "new alert from velocloud orchestrator",
+			"facts": [
+				{
+					"name": "alert time",
+					"value": "{{alertTime}}"
+				},
+				{
+					"name": "alert type",
+					"value": "{{alertType}}"
+				},
+				{
+					"name": "device impacted",
+					"value": "{{entityAffected}}"
+				},
+				{
+					"name": "device last contact",
+					"value": "{{lastContact}}"
+				},
+				{
+					"name": "message",
+					"value": "{{message}}"
+				}
+			]
+		}
+	]
+}
